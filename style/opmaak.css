@@ -23,3 +23,64 @@ header h2 {
   margin-top: 25px;
   width: 100%;
 }
+
+/*navigatie balk*/
+div.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 1px;
+  overflow: hidden;
+  background-color: #b57ba6;
+  font-size: 20px;
+}
+
+div.menu li{
+  float: left;
+}
+
+div.menu li a {
+    display: inline-block;
+    color: black;
+    text-align: left;
+    padding: 21px 24px;
+    text-decoration: none;
+}
+
+/* blink for Firefox, IE en Chrome */
+@keyframes blink {
+    from {background-color: #006fb6;}
+    to {background-color: #80dfff;}
+}
+
+/* blink for Safari */
+@-webkit-keyframes blink {
+    from {background-color: #006fb6;}
+    to {background-color: #FFBC25;}
+}
+
+div.menu li a:hover {
+    animation-direction: alternate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: blink;
+    animation-timing-function: ease;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: blink;
+    -webkit-animation-timing-function: ease;
+    -moz-animation-direction: alternate;
+    -moz-animation-duration: 1s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-name: blink;
+    -moz-animation-timing-function: ease;
+}
+
+div.menu ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+div.menu ul li a:hover {
+  color: #0f0f0a;
+}
