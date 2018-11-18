@@ -27,14 +27,17 @@ header h2 {
 
 /*navigatie balk*/
 nav ul {
-  position: sticky;
-  top: 0;
   list-style-type: none;
   margin: 0;
   padding: 1px;
   overflow: hidden;
   background-color: #b57ba6;
   font-size: 20px;
+}
+
+nav {
+  position: sticky;
+  top: 0px;
 }
 
 nav li{
@@ -95,8 +98,8 @@ section {
   margin: auto;
   width: 60%;
   padding: 20px;
-  width: 960px;
-  height: 650px;
+  width: auto;
+  height: auto;
 }
 
 section article {
@@ -125,4 +128,8 @@ footer h3 {
 p::first-letter {
     font-size: 200%;
     color: #8A2BE2;
+}
+
+.badges{
+  text-align: center;
 }
